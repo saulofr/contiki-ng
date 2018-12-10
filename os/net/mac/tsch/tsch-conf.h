@@ -437,5 +437,12 @@ by default, useful in case of duplicate seqno */
 #define TSCH_CONF_RX_WAIT 2200
 #endif /* TSCH_CONF_RX_WAIT */
 
+/* Dual radio*/ 
+#ifdef TSCH_CONF_DUAL_RADIO
+#define TSCH_DUAL_RADIO TSCH_CONF_DUAL_RADIO
+#else
+#define TSCH_DUAL_RADIO 0
+#endif
+
 #endif /* __TSCH_CONF_H__ */
 /** @} */
